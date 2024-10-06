@@ -1,3 +1,27 @@
-h1{
-  color: green;
+.background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  inset: 0;
+  /* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+  object-fit: cover;
+  /* float: left; */
+  padding: none;
+  z-index: -1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in{
+  animation: fadeIn 500ms ease-in-out;
 }
